@@ -68,7 +68,7 @@
   <!-- Hero Section Starts Here -->
   <section class="hero w-full flex flex-col md:flex-row justify-center items-center h-auto px-8 py-8 md:px-12 lg:px-24">
     <!-- Text Content -->
-    <div class="flex flex-col gap-4 w-full md:w-1/2">
+    <div class="flex flex-col gap-8 mt-4 w-full md:w-1/2">
       <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide leading-relaxed">
         Navigating the digital landscape for success
       </h1>
@@ -76,29 +76,88 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quasi dolorem amet ad vero, doloremque ea.
         Sit maxime expedita animi ut eligendi cum maiores itaque libero fuga error, alias consequuntur!
       </p>
+      <button class="py-4 px-6 w-fit text-xs bg-black text-white rounded-lg">Book a consulation</button>
     </div>
-  
+
     <!-- Image Content -->
     <div class="flex w-full md:w-1/2 justify-center md:justify-end items-center md:items-end mt-4 md:mt-0">
       <img src="/imgs/hero.webp" alt="Hero Image" class="w-full max-w-xs sm:max-w-sm md:max-w-xs">
     </div>
+
   </section>
-  
-  <section class="w-full h-auto px-8 py-8 md:px-12 lg:px-24">
-    <div class="flex justify-between items-center">
+
+
+  <!-- Hero Section Ends Here -->
+
+  <!-- Images Section Starts Here -->
+  <section class="w-full image-section h-auto px-8 py-8 md:px-12 lg:px-24">
+    <div class="flex flex-wrap justify-between items-center">
       <img src="/imgs/amazon.webp" class=" w-40" alt="">
       <img src="/imgs/dribble.webp" class=" w-40" alt="">
       <img src="/imgs/hubspot.webp" class=" w-40" alt="">
       <img src="/imgs/notion.webp" class=" w-40" alt="">
       <img src="/imgs/netflix.webp" class=" w-40" alt="">
     </div>
-    </section>
+  </section>
+  <!-- Images Section Ends Here -->
+
+  <!-- Services Section Starts Here -->
+  <section class="w-full services-section h-auto px-8 py-8 md:px-12 lg:px-24">
+
+    <div class="flex gap-10 services-para-div">
+      <h1 class="text-2xl rounded font-[500] bg-[#bafe66] my-auto block">Services</h1>
+      <p class="w-1/2 font-[400] text-xs">At our digital marketing agency, we offer a range of services to help
+        businesses grow and succeed online. These services include:</p>
+    </div>
+    <!-- services-cards starts Here -->
+    <div class="services-cards font-mono py-12 w-full grid grid-cols-2 place-content-between pl ">
+      <!-- 1st Card -->
+      <div class="max-w-sm rounded-2xl py-6 px-8 flex justify-between items-start shadow-lg shadow-black border-2 border-black">
+        <div class="flex flex-col h-full justify-between items-start">
+            <!-- Wrapped text in spans inside a div -->
+            <div class="w-fit ">
+                <span class="text-base rounded px-1 bg-[#bafe66] w-fit font-[500]">Search engine</span>
+                <span class="text-base rounded px-1 relative bottom-0.5 bg-[#bafe66] w-fit font-[500]">optimization</span>
+            </div>
+    
+            <button class="h-7 flex gap-2 w-7 rounded-full bg-black flex justify-center items-center mt-2">
+                <i class="ri-arrow-right-up-line text-2xl text-[#bafe66]"></i>
+                <p class="font-light">Learn more</p>
+            </button>
+        </div>
+        <img src="/imgs/hero.webp" alt="" class="max-w-40">
+    </div>
+    
+    <!-- 2nd Card -->
+    <div class="max-w-sm rounded-2xl py-6 px-8 flex justify-between items-start shadow-lg shadow-black border-2 bg-black border-black">
+      <div class="flex flex-col h-full justify-between items-start">
+          <!-- Wrapped text in spans inside a div -->
+          <div class="w-fit ">
+              <span class="text-base rounded px-1 bg-[#fff] w-fit font-[500]">Pay per click</span>
+              <span class="text-base rounded px-1 relative bottom-0.5 bg-[#fff] w-fit font-[500]">advertising</span>
+          </div>
+  
+          <button class="h-7  gap-2 w-7 rounded-full bg-white flex justify-center items-center mt-2">
+              <i class="ri-arrow-right-up-line text-2xl text-[#000]"></i>
+              <p class="font-light text-white">Learn more</p>
+          </button>
+      </div>
+      <img src="/imgs/hero.webp" alt="" class="max-w-40">
+  </div>
+    
+      
+    </div>
+    <!-- services-cards Ends Here -->
+  </section>
+  <!-- Services Section Ends Here -->
 
 
-  <!-- Hero Section Ends Here -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="/main.js"></script>
 </body>
