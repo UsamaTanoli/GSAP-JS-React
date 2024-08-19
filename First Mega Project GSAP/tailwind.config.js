@@ -4,7 +4,11 @@ export default {
     "*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+    fontFamily: {
+      'poppins': 'poppins'
+    }
+    },
   },
   plugins: [],
 }
