@@ -5,50 +5,54 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>WizardZ</title>
   <link rel="stylesheet" href="style.css">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 </head>
 
 <body class="font-poppins overflow-x-hidden">
 
-  <header class="w-full p-8">
-    <nav class="flex justify-between items-center ">
-      <div class="flex gap-x-2 justify-center items-center">
+  <header class="w-full">
+    <nav class="flex justify-between items-center px-8 py-8  md:px-12 lg:px-24">
+      <div class="flex gap-x-2 justify-center items-center ">
         <i class="ri-shining-2-fill rotate-45 text-2xl"></i>
-        <h1 class="font-semibold text-2xl tracking-widest">WizardZ</h1>
+        <h1 class="font-semibold text-2xl tracking-wide">
+          <span class="up inline-block">W</span>
+          <span class="up inline-block">i</span>
+          <span class="up inline-block">z</span>
+          <span class="up inline-block">a</span>
+          <span class="down inline-block">r</span>
+          <span class="down inline-block">d</span>
+          <span class="down inline-block">Z</span>
+        </h1>
       </div>
-      <ul class="lg:flex hidden  items-center gap-12 text-sm font-[500]">
-        <li>About Us</a></li>
-        <li>Services</a></li>
-        <li>Use Cases</a></li>
-        <li>Pricing</a></li>
+      <ul class="lg:flex hidden navbar-items items-center gap-x-12 text-sm font-[500]">
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Use Cases</li>
+        <li>Pricing</li>
         <li>Blog</li>
-        <button class="px-4 py-2 rounded-md text-xs border-[1.5px] w-fit border-black">Request a quote</button>
+        <li><button class="px-4 py-2 rounded-md text-xs border-[1.5px] w-fit border-black">Request a quote</button></li>
       </ul>
- 
-        <i class="ri-menu-4-line menu-icon text-2xl font-semibold lg:hidden block"></i>
+      <i class="ri-menu-4-line menu-icon text-2xl font-semibold lg:hidden block"></i>
     </nav>
   </header>
 
-  <div class="mobile-menu bg-[#00000050] lg:hidden backdrop-blur-md h-screen w-full absolute top-0 right-[-100%] ">
-    <nav class="flex flex-col justify-between gap-24 items-start p-8 ">
-      <div class="w-full flex  justify-between items-center">
-       <div class="flex brand gap-x-2 items-center">
-        <i class="ri-shining-2-fill rotate-45 text-2xl"></i>
-        <h1 class="font-semibold text-2xl tracking-widest">WizardZ</h1>
-       </div>
-        <i class="cursor-pointer ri-close-line text-2xl close-menu font-semibold inline-block "></i>
+  <div class="mobile-menu bg-[#00000050] lg:hidden backdrop-blur-md h-screen w-full absolute top-0 -right-full">
+    <nav class="flex flex-col justify-between gap-24 items-start p-8">
+      <div class="w-full flex justify-between items-center">
+        <div class="flex brand gap-x-2 items-center">
+          <i class="ri-shining-2-fill rotate-45 text-2xl"></i>
+          <h1 class="font-semibold text-2xl tracking-widest">WizardZ</h1>
+        </div>
+        <i class="cursor-pointer ri-close-line text-2xl close-menu font-semibold inline-block"></i>
       </div>
-      <ul class="flex flex-col  items-start gap-8  text-sm font-[500]">
+      <ul class="flex flex-col items-start gap-8 text-sm font-[500]">
         <li>About Us</li>
         <li>Services</li>
         <li>Use Cases</li>
@@ -60,8 +64,42 @@
       </ul>
     </nav>
   </div>
+
+  <!-- Hero Section Starts Here -->
+  <section class="hero w-full flex flex-col md:flex-row justify-center items-center h-auto px-8 py-8 md:px-12 lg:px-24">
+    <!-- Text Content -->
+    <div class="flex flex-col gap-4 w-full md:w-1/2">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide leading-relaxed">
+        Navigating the digital landscape for success
+      </h1>
+      <p class="text-sm sm:text-base md:text-sm lg:text-base font-medium tracking-wide">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quasi dolorem amet ad vero, doloremque ea.
+        Sit maxime expedita animi ut eligendi cum maiores itaque libero fuga error, alias consequuntur!
+      </p>
+    </div>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Image Content -->
+    <div class="flex w-full md:w-1/2 justify-center md:justify-end items-center md:items-end mt-4 md:mt-0">
+      <img src="/imgs/hero.webp" alt="Hero Image" class="w-full max-w-xs sm:max-w-sm md:max-w-xs">
+    </div>
+  </section>
+  
+  <section class="w-full h-auto px-8 py-8 md:px-12 lg:px-24">
+    <div class="flex justify-between items-center">
+      <img src="/imgs/amazon.webp" class=" w-40" alt="">
+      <img src="/imgs/dribble.webp" class=" w-40" alt="">
+      <img src="/imgs/hubspot.webp" class=" w-40" alt="">
+      <img src="/imgs/notion.webp" class=" w-40" alt="">
+      <img src="/imgs/netflix.webp" class=" w-40" alt="">
+    </div>
+    </section>
+
+
+  <!-- Hero Section Ends Here -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="/main.js"></script>
 </body>
 
