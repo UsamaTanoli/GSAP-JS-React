@@ -97,16 +97,16 @@ function servicesAnimation() {
             }, 'second')
 }
 
-// Services Section Animation (VIP)
+//  Section Animation (VIP)
 function thingsAnimation() {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.things-section',
             scroller: 'body',
             scrub: 2,
-            markers: true,
-            start: 'top 70%',
-            end: 'top 50%'
+            markers: false,
+            start: 'top 100%',
+            end: 'top 40%'
         }
     })
 
@@ -126,6 +126,26 @@ function thingsAnimation() {
         opacity: 0,
         duration: 1
     }, 'things')
+
+}
+
+function caseSection() {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.case-sec',
+            scroller: 'body',
+            scrub: 2,
+            markers: true,
+            start: 'top 50%',
+            end: 'top 40%'
+        }
+    })
+    tl.from('.case-sec div .title', {
+        opacity: 0,
+        x: -100,
+        stagger: 0.2,
+        duration: 1,
+    })
 }
 
 // Responsive Animations
@@ -137,6 +157,7 @@ function responsiveAnimations() {
         imageSectionAnimation();
         servicesAnimation();
         thingsAnimation()
+        caseSection()
     });
 
     gsap.matchMedia().add("(max-width: 767px)", () => {

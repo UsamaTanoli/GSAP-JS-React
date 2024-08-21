@@ -114,121 +114,131 @@
   <!-- Images Section Ends Here -->
 
   <!-- Services Section Starts Here -->
-  <section class="w-full services-section h-fit px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
-    <!-- Title and Description -->
-    <div class="flex  flex-col justify-start items-center md:flex-row gap-4 md:gap-10 services-para-div">
-      <h1 class="text-2xl rounded font-[500] bg-[#bafe66] p-1 w-fit">Services</h1>
-      <p class="md:w-1/2 font-[400] text-xs">At our digital marketing agency, we offer a range of services to help
-        businesses grow and succeed online. These services include:</p>
+  <section
+    class="w-full flex flex-col  justify-center items-center services-section h-fit px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
+    <div class="flex justify-start items-start flex-col">
+      <!-- Title and Description -->
+      <div
+        class="flex   flex-col justify-start items-center md:flex-row gap-4 md:gap-10 services-para-div">
+        <h1 class="text-2xl rounded font-[500] bg-[#bafe66] p-1 w-fit">Services</h1>
+        <p class="font-[400] text-xs w-2/3">At our digital marketing agency, we offer a range of services to help
+          businesses grow and succeed online. These services include:</p>
+      </div>
+
+      <!-- Services Cards Start Here -->
+      <div class="services-cards py-12  grid grid-cols-1 md:grid-cols-2 gap-20 place-content-center place-items-center">
+        <!-- 1st Card -->
+        <div
+          class="lightcard left one w-full sm:w-96 lg:w-[30rem]  rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#fff] shadow-black border-2 border-black">
+          <div class="flex flex-col h-40 justify-between items-start">
+            <!-- Wrapped text in spans inside a div -->
+            <div class="flex flex-col">
+              <p class="text-base w-fit rounded px-1 bg-[#bafe66] text-nowrap font-[500]">Search engine</p>
+              <p class="text-base w-fit rounded px-1 bg-[#bafe66] font-[500]">optimization</p>
+              <p class="text-[10px] mt-2">Boost your website’s visibility and drive more traffic with our expert SEO
+                services.</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-x-2">
+              <button class="h-8 w-8 rounded-full bg-black flex justify-center items-center">
+                <i class="ri-arrow-right-up-line text-3xl text-[#bafe66]"></i>
+              </button>
+              <p class="font-light text-sm">Learn more</p>
+            </div>
+          </div>
+          <img src="/imgs/seo.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
+        </div>
+
+        <!-- 2nd Card -->
+        <div
+          class="darkcard right one w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#111] shadow-black border-2 border-black">
+          <div class="flex flex-col h-40 justify-between items-start">
+            <!-- Wrapped text in spans inside a div -->
+            <div class="flex flex-col">
+              <p class="text-base w-fit rounded px-1 bg-[#fff] text-nowrap font-[500]">Pay per click</p>
+              <p class="text-base w-fit rounded px-1 bg-[#fff] font-[500]">advertising</p>
+              <p class="text-[10px] text-white mt-2">Maximize your ROI with targeted PPC campaigns that reach your
+                audience.</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-x-2">
+              <button class="h-8 w-8 rounded-full bg-white flex justify-center items-center">
+                <i class="ri-arrow-right-up-line text-3xl text-[#000]"></i>
+              </button>
+              <p class="text-white font-light text-sm">Learn more</p>
+            </div>
+          </div>
+          <img src="/imgs/pay-per.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
+        </div>
+
+        <!-- 3rd Card -->
+        <div
+          class="darkcard left two w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#111] shadow-black border-2 border-black">
+          <div class="flex flex-col h-40 justify-between items-start">
+            <!-- Wrapped text in spans inside a div -->
+            <div class="flex flex-col">
+              <p class="text-base w-fit rounded px-1 bg-[#fff] text-nowrap font-[500]">Social media</p>
+              <p class="text-base w-fit rounded px-1 bg-[#fff] font-[500]">marketing</p>
+              <p class="text-[10px] text-white mt-2">Engage and grow your audience with tailored social media
+                strategies.
+              </p>
+            </div>
+
+            <div class="flex justify-center items-center gap-x-2">
+              <button class="h-8 w-8 rounded-full bg-white flex justify-center items-center">
+                <i class="ri-arrow-right-up-line text-3xl text-[#000]"></i>
+              </button>
+              <p class="text-white font-light text-sm">Learn more</p>
+            </div>
+          </div>
+          <img src="/imgs/sm.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
+        </div>
+
+        <!-- 4th Card -->
+        <div
+          class="lightcard right two w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-6 sm:px-8 flex justify-between items-center gap-x-6 sm:gap-x-9 shadow-lg bg-[#fff] shadow-black border-2 border-black">
+          <div class="flex flex-col h-40 justify-between items-start">
+            <!-- Wrapped text in spans inside a div -->
+            <div class="flex flex-col">
+              <p class="text-sm sm:text-base w-fit rounded px-1 bg-[#bafe66] text-nowrap font-[500]">E-mail</p>
+              <p class="text-sm sm:text-base w-fit rounded px-1 bg-[#bafe66] font-[500]">marketing</p>
+              <p class="text-[9px] sm:text-[10px] mt-2">Create effective email campaigns that convert and keep your
+                customers engaged.</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-x-1 sm:gap-x-2">
+              <button class="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-black flex justify-center items-center">
+                <i class="ri-arrow-right-up-line text-2xl sm:text-3xl text-[#bafe66]"></i>
+              </button>
+              <p class="text-xs sm:text-sm font-light">Learn more</p>
+            </div>
+          </div>
+          <img src="/imgs/em.webp" alt="Service Image" class="w-24 sm:w-28 ">
+        </div>
+
+
+      </div>
+
+      <!-- Services Cards End Here -->
     </div>
-
-    <!-- Services Cards Start Here -->
-    <div class="services-cards py-12  grid grid-cols-1 md:grid-cols-2 gap-20 place-content-center place-items-center">
-      <!-- 1st Card -->
-      <div
-        class="lightcard left one w-full sm:w-96 lg:w-[30rem]  rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#fff] shadow-black border-2 border-black">
-        <div class="flex flex-col h-40 justify-between items-start">
-          <!-- Wrapped text in spans inside a div -->
-          <div class="flex flex-col">
-            <p class="text-base w-fit rounded px-1 bg-[#bafe66] text-nowrap font-[500]">Search engine</p>
-            <p class="text-base w-fit rounded px-1 bg-[#bafe66] font-[500]">optimization</p>
-            <p class="text-[10px] mt-2">Boost your website’s visibility and drive more traffic with our expert SEO
-              services.</p>
-          </div>
-
-          <div class="flex justify-center items-center gap-x-2">
-            <button class="h-8 w-8 rounded-full bg-black flex justify-center items-center">
-              <i class="ri-arrow-right-up-line text-3xl text-[#bafe66]"></i>
-            </button>
-            <p class="font-light text-sm">Learn more</p>
-          </div>
-        </div>
-        <img src="/imgs/seo.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
-      </div>
-
-      <!-- 2nd Card -->
-      <div
-        class="darkcard right one w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#111] shadow-black border-2 border-black">
-        <div class="flex flex-col h-40 justify-between items-start">
-          <!-- Wrapped text in spans inside a div -->
-          <div class="flex flex-col">
-            <p class="text-base w-fit rounded px-1 bg-[#fff] text-nowrap font-[500]">Pay per click</p>
-            <p class="text-base w-fit rounded px-1 bg-[#fff] font-[500]">advertising</p>
-            <p class="text-[10px] text-white mt-2">Maximize your ROI with targeted PPC campaigns that reach your
-              audience.</p>
-          </div>
-
-          <div class="flex justify-center items-center gap-x-2">
-            <button class="h-8 w-8 rounded-full bg-white flex justify-center items-center">
-              <i class="ri-arrow-right-up-line text-3xl text-[#000]"></i>
-            </button>
-            <p class="text-white font-light text-sm">Learn more</p>
-          </div>
-        </div>
-        <img src="/imgs/pay-per.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
-      </div>
-
-      <!-- 3rd Card -->
-      <div
-        class="darkcard left two w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-8 flex justify-between items-center gap-x-9 shadow-lg bg-[#111] shadow-black border-2 border-black">
-        <div class="flex flex-col h-40 justify-between items-start">
-          <!-- Wrapped text in spans inside a div -->
-          <div class="flex flex-col">
-            <p class="text-base w-fit rounded px-1 bg-[#fff] text-nowrap font-[500]">Social media</p>
-            <p class="text-base w-fit rounded px-1 bg-[#fff] font-[500]">marketing</p>
-            <p class="text-[10px] text-white mt-2">Engage and grow your audience with tailored social media strategies.
-            </p>
-          </div>
-
-          <div class="flex justify-center items-center gap-x-2">
-            <button class="h-8 w-8 rounded-full bg-white flex justify-center items-center">
-              <i class="ri-arrow-right-up-line text-3xl text-[#000]"></i>
-            </button>
-            <p class="text-white font-light text-sm">Learn more</p>
-          </div>
-        </div>
-        <img src="/imgs/sm.webp" alt="Service Image" class="w-24 sm:w-28 lg:w-32">
-      </div>
-
-      <!-- 4th Card -->
-      <div
-        class="lightcard right two w-full sm:w-96 lg:w-[30rem] rounded-2xl py-6 px-6 sm:px-8 flex justify-between items-center gap-x-6 sm:gap-x-9 shadow-lg bg-[#fff] shadow-black border-2 border-black">
-        <div class="flex flex-col h-40 justify-between items-start">
-          <!-- Wrapped text in spans inside a div -->
-          <div class="flex flex-col">
-            <p class="text-sm sm:text-base w-fit rounded px-1 bg-[#bafe66] text-nowrap font-[500]">E-mail</p>
-            <p class="text-sm sm:text-base w-fit rounded px-1 bg-[#bafe66] font-[500]">marketing</p>
-            <p class="text-[9px] sm:text-[10px] mt-2">Create effective email campaigns that convert and keep your
-              customers engaged.</p>
-          </div>
-
-          <div class="flex justify-center items-center gap-x-1 sm:gap-x-2">
-            <button class="h-7 w-7 sm:h-8 sm:w-8 rounded-full bg-black flex justify-center items-center">
-              <i class="ri-arrow-right-up-line text-2xl sm:text-3xl text-[#bafe66]"></i>
-            </button>
-            <p class="text-xs sm:text-sm font-light">Learn more</p>
-          </div>
-        </div>
-        <img src="/imgs/em.webp" alt="Service Image" class="w-24 sm:w-28 ">
-      </div>
-
-
-    </div>
-
-    <!-- Services Cards End Here -->
   </section>
   <!-- Services Section Ends Here -->
 
 
   <!-- Things Happen Section starts Here -->
-  <section class="w-full things-section bg-slate-600  h-1/2 px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
-    <div class="w-full  bg-[#f3f3f3] md:px-20 sm:px-12 px-4 py-5 rounded-xl grid grid-cols-1 ssm:grid-cols-2 place-content-between place-items-center">
+  <section
+    class="w-full things-section flex flex-col justify-center items-center  h-1/2 px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
+    <div
+      class="w-full  bg-[#f3f3f3] md:px-20 sm:px-12 px-4 py-5 rounded-xl grid grid-cols-1 ssm:grid-cols-2 place-content-between place-items-center">
       <div class="flex flex-col gap-4 order-2 ssm:order-1 first-col">
         <h2 class="md:text-2xl sm:text-xl ssm:text-base xs:text-sm text-xs  font-[500]">Let's make things happen </h2>
-        <p class="md:text-sm sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px]">Contact us today to learn more about how our digital marketing services can help your
+        <p class="md:text-sm sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px]">Contact us today to learn more about
+          how our digital marketing services can help your
           business grow and
           succeed online. </p>
-        <button class="sm:py-4 sm:px-6 px-4 py-2 w-fit sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px] bg-black text-white rounded-lg">Get your free
+        <button
+          class="sm:py-4 sm:px-6 px-4 py-2 w-fit sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px] bg-black text-white rounded-lg">Get
+          your free
           proposal</button>
       </div>
       <div class=" w-full flex ssm:justify-end justify-center items-center ssm:order-2 order-1 sec-col">
@@ -238,24 +248,62 @@
   </section>
   <!-- Things Happen Section ends Here -->
 
-  <section class="w-full things-section bg-slate-200  h-1/2 px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
-    <div class="w-full  bg-[#f3f3f3] md:px-20 sm:px-12 px-4 py-5 rounded-xl grid grid-cols-1 ssm:grid-cols-2 place-content-between place-items-center">
-      <div class="flex flex-col gap-4 order-2 ssm:order-1 first-col">
-        <h2 class="md:text-2xl sm:text-xl ssm:text-base xs:text-sm text-xs  font-[500]">Let's make things happen </h2>
-        <p class="md:text-sm sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px]">Contact us today to learn more about how our digital marketing services can help your
-          business grow and
-          succeed online. </p>
-        <button class="sm:py-4 sm:px-6 px-4 py-2 w-fit sm:text-xs ssm:text-[10px] xs:text-[8px] text-[6px] bg-black text-white rounded-lg">Get your free
-          proposal</button>
+
+
+  <!-- case Study section starts here -->
+  <section
+    class="w-full case-sec flex flex-col gap-8 justify-center items-start h-1/2  px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16 bg-white">
+
+    <!-- Title and Description -->
+    <div class="flex title flex-col md:flex-row justify-start items-start gap-4 md:gap-10">
+      <h1 class="text-2xl font-medium bg-[#bafe66] p-2 rounded-md w-fit">Case study</h1>
+      <p class="md:w-1/2 text-sm font-normal text-gray-700">
+        Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
+      </p>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="w-full text-sm bg-[#1f1f1f] grid grid-cols-1 md:grid-cols-3 rounded-[2rem] p-8 gap-6">
+      <!-- First Card -->
+      <div class=" text-white p-4 border-r flex flex-col gap-y-3">
+        <p class=" font-light">
+          For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
+          traffic and a 25% increase in sales.
+        </p>
+        <div class="text-[#bafe66] flex items-center gap-x-2">
+          <p>Learn more</p>
+          <i class="ri-arrow-right-up-line text-xl"></i>
+        </div>
       </div>
-      <div class=" w-full flex ssm:justify-end justify-center items-center ssm:order-2 order-1 sec-col">
-        <img src="/imgs/positive.webp" alt="positive" class="md:w-40 sm:w-36 xs:w-24 w-20 relative ssm:top-5 -top-3">
+
+      <!-- Second Card -->
+      <div class=" text-white p-4  flex flex-col gap-y-3 border-r">
+        <p class=" font-light">
+          For a B2B software company, we developed an SEO strategy that resulted in a first-page ranking for key
+          keywords and a 200% increase in organic traffic.
+        </p>
+        <div class="text-[#bafe66] flex items-center gap-x-2">
+          <p>Learn more</p>
+          <i class="ri-arrow-right-up-line text-xl"></i>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class=" text-white p-4 flex flex-col gap-y-3">
+        <p class=" font-light">
+          For a national retail chain, we created a social media marketing campaign that increased followers by 25% and
+          generated a 20% increase in online sales.
+        </p>
+        <div class="text-[#bafe66] flex items-center gap-x-2">
+          <p>Learn more</p>
+          <i class="ri-arrow-right-up-line text-xl"></i>
+        </div>
       </div>
     </div>
   </section>
 
 
-
+  <!-- case Study section ends here -->
 
 
 
