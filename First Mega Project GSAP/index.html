@@ -15,7 +15,7 @@
     rel="stylesheet">
 </head>
 
-<body class="font-poppins h-screen w-full grid gap-5 overflow-x-hidden">
+<body class="font-poppins h-screen w-full grid gap-5 overflow-hidden">
   <header class="w-full">
     <nav class="flex justify-between items-center px-8 py-8 md:px-12 lg:px-24">
       <div class="flex gap-x-2 justify-center items-center">
@@ -45,7 +45,7 @@
   </header>
 
   <div
-    class="mobile-menu bg-[#00000050] lg:hidden backdrop-blur-xl h-screen z-50 overflow-hidden w-screen fixed top-0 -right-[100vw]">
+    class="mobile-menu bg-[#00000050] lg:hidden backdrop-blur-xl h-screen z-50 w-full fixed top-0 -right-full transition-transform duration-300">
     <nav class="flex flex-col justify-between gap-24 items-start p-8">
       <div class="w-full flex justify-between items-center">
         <div class="flex brand gap-x-2 items-center">
@@ -66,6 +66,7 @@
       </ul>
     </nav>
   </div>
+
 
   <!-- Hero Section Starts Here -->
   <section
@@ -118,8 +119,7 @@
     class="w-full flex flex-col  justify-center items-center services-section h-fit px-8 py-8 md:px-12 md:py-12 lg:px-24 lg:py-16">
     <div class="flex justify-start items-start flex-col">
       <!-- Title and Description -->
-      <div
-        class="flex   flex-col justify-start items-center md:flex-row gap-4 md:gap-10 services-para-div">
+      <div class="flex   flex-col justify-start items-center md:flex-row gap-4 md:gap-10 services-para-div">
         <h1 class="text-2xl rounded font-[500] bg-[#bafe66] p-1 w-fit">Services</h1>
         <p class="font-[400] text-xs w-2/3">At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:</p>
@@ -263,9 +263,9 @@
     </div>
 
     <!-- Cards Container -->
-    <div class="w-full text-sm bg-[#1f1f1f] grid grid-cols-1 md:grid-cols-3 rounded-[2rem] p-8 gap-6">
+    <div class="w-full case-card text-sm bg-[#1f1f1f] grid grid-cols-1 md:grid-cols-3 rounded-[2rem] p-8 gap-6">
       <!-- First Card -->
-      <div class=" text-white p-4 border-r flex flex-col gap-y-3">
+      <div class=" first text-white p-4  flex flex-col gap-y-3 md:border-b-0 md:border-r border-r-0 border-b">
         <p class=" font-light">
           For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website
           traffic and a 25% increase in sales.
@@ -277,7 +277,7 @@
       </div>
 
       <!-- Second Card -->
-      <div class=" text-white p-4  flex flex-col gap-y-3 border-r">
+      <div class=" second text-white p-4  flex flex-col gap-y-3 md:border-b-0 md:border-r border-r-0 border-b">
         <p class=" font-light">
           For a B2B software company, we developed an SEO strategy that resulted in a first-page ranking for key
           keywords and a 200% increase in organic traffic.
@@ -289,7 +289,7 @@
       </div>
 
       <!-- Third Card -->
-      <div class=" text-white p-4 flex flex-col gap-y-3">
+      <div class=" third text-white p-4 flex flex-col gap-y-3">
         <p class=" font-light">
           For a national retail chain, we created a social media marketing campaign that increased followers by 25% and
           generated a 20% increase in online sales.
@@ -305,8 +305,9 @@
 
   <!-- case Study section ends here -->
 
-
-
+  <footer class="w-full case-sec flex flex-col justify-center items-center  px-8 py-2 md:px-12 lg:px-24    bg-white">
+    <p class="font-light  tracking-widest text-xl">Created By Abubakar Aijaz</p>
+  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
     integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
