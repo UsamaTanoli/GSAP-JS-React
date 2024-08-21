@@ -127,11 +127,28 @@ function caseSectionAnimation() {
         .from('.case-sec .case-card .third', { opacity: 0, duration: 1 });
 }
 
+// Responsive Animations
+function responsiveAnimations() {
+    gsap.matchMedia().add("(min-width: 768px)", () => {
+        // Desktop and tablet animations
+        navBarAnimations();
+        heroSectionAnimation();
+        imageSectionAnimation();
+        servicesAnimation();
+        thingsAnimation()
+        caseSection()
+    });
+
+    gsap.matchMedia().add("(max-width: 767px)", () => {
+        // Mobile-specific animations
+        mobileMenuAnimations();
+        heroSectionAnimation();
+        imageSectionAnimation();
+        servicesAnimation();
+        thingsAnimation()
+        caseSection()
+    });
+}
+
 // Initialize Animations
-mobileMenuAnimations();
-navBarAnimations();
-heroSectionAnimation();
-imageSectionAnimation();
-servicesAnimation();
-thingsAnimation();
-caseSectionAnimation();
+responsiveAnimations();
